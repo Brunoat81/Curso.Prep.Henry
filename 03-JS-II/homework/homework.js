@@ -176,7 +176,14 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  i = 1;
+  u = 6;
+  b = null;
+  while (b < 60) {
+    (b = u * i);
+    console.log(b);
+    i++;
+  }
 }
 
 function tieneTresDigitos(numero){
