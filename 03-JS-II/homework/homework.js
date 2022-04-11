@@ -179,11 +179,12 @@ function tablaDelSeis(){
   i = 0;
   u = 6;
   b = null;
+  tabla = [];
   while (b < 60) {
     (b = u * i);
-    console.log(b);
     i++;
-  }
+    tabla.push (b);
+  } console.log (tabla)
 }
 
 function tieneTresDigitos(numero){
@@ -205,7 +206,7 @@ function doWhile(numero) {
     res = numero + a;
     a = a + 5;
   } while (a < 45)
-  console.log (res);
+  return res;
 }
 
 
