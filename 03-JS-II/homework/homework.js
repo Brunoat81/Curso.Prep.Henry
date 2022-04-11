@@ -184,7 +184,7 @@ function tablaDelSeis(){
     (b = u * i);
     i++;
     tabla.push (b);
-  } console.log (tabla)
+  } return tabla
 }
 
 function tieneTresDigitos(numero){
