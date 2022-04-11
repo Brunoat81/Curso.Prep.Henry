@@ -79,7 +79,7 @@ function colors(color) {
             return "This is orange"
             break;
             default:
-              return "Colour not found"
+              return "Color not found"
   }
 }
 
@@ -87,16 +87,16 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero === 10 || numero === 5)
+  if (numero === 10 || numero === 5) {
   return true;
-  else return false;
+  } return false;
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero > 50 && numero < 20)
+  if (numero < 50 && numero > 20)
   return true;
   else return false;
 }
@@ -153,7 +153,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero > 2) {
+  if (numero < 2) {
     return false;
   } if (numero === 2) {
     return true;
@@ -176,7 +176,7 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  i = 1;
+  i = 0;
   u = 6;
   b = null;
   while (b < 60) {
@@ -199,13 +199,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var a = numero + 5;
   var res = 0;
-  var mult = 1;
+  var a = 5;
   do {
-    res = a * mult;
-    mult++;
-  } while (res < (a * 8))
+    res = numero + a;
+    a = a + 5;
+  } while (a < 45)
   console.log (res);
 }
 
