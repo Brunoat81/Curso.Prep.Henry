@@ -3,18 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  array = ['lunes', 'martes', 'miércoles'];
+  return (array[0]);
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  array = ['lunes', 'martes', 'miércoles'];
+  return (array[array.length -1]);
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  array = ['lunes', 'martes', 'miércoles'];
+  return (array.length);
 }
 
 
@@ -23,6 +29,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  array = [0,1,2,3];
+  array [0] = array [0] + 1;
+  array [1] = array [1] + 1;
+  array [2] = array [2] + 1;
+  array [3] = array [3] + 1;
+    return array
 }
 
 
@@ -30,6 +42,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array = [0,1,2,3];
+  array.push ('elemento');
+  return array
 }
 
 
